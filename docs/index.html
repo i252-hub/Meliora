@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!--Javascript -->
+    <script src="main.js"></script>
+<!--------------------------------------------->
+<!--Homepage-->
+<audio id="audio" loop>
+    <source src="September.mp3" type="audio/mpeg">
+          </audio>
+
+    <div class = 'Bg' id = 'blurred' >
+        <header>
+          <a href = "index.html"><h2 class = "logo">iWrite</h2></a>
+            <nav class = "navigation">
+                <a class = 'blur' style = "cursor:default" onclick = "toggle()">Letter</a>
+                <!--------------------------------------------->
+                            <!--Book Feature-->
+                <a href="book.html"style = "cursor:default">Book</a>
+                <!--------------------------------------------->
+                <a href="memo.html" style = "cursor:default">Memo</a>
+                <a href="track.html" style = "cursor:default">Track</a>
+
+
+                <!-- <button id = 'playSound' onclick="sound()">
+                Focus: Off
+                </button>   -->
+                
+            </nav>
+        </header>
+           </div>
+
+    
+<!--Journal Feature-->
+    <div id = "popup">Thoughts
+
+        <audio id="audio_play" loop>
+            <source src="Studio Ghibli.mp3" type="audio/mpeg">
+                  </audio>
+
+        <h1>Unsent Letters</h1>
+        <div class = "field">
+            <textarea input type = "text"class = "input" required
+            rows="25" cols="105" id = "txt"  
+            placeholder="Write your thoughts..."></textarea>
+        </div>
+        <div class = "field">
+            <button class = "submit" id = "sub" onclick = "erase()">Done</button>
+        </div>
+        <a href = "main.html"><i class="fa-solid fa-xmark" id = "fa" style="color: #f3f4f7;"></i></a>
+     </div>
+
+                <!--------------------------------------------->
+
+
+</body>
+
+</html>
