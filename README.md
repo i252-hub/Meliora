@@ -1,5 +1,5 @@
 # iWrite
 
-> A personal project which is mainly focused on javascript.
-> https://i252-hub.github.io/chill-webapp/index.html
+> A personal project 
+> https://i252-hub.github.io/html-css-js/
 
