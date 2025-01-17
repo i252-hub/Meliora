@@ -1,3 +1,3 @@
 # iWrite
 
-> A side project 
+> A side project to be revised
