@@ -1,3 +1,4 @@
-# iWrite
+# Meliora
 
-> A side project to be revised
+## Tools
+- JavaScript, HTML5, CSS
