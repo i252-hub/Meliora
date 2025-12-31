@@ -6,47 +6,62 @@
     box-sizing: border-box;
 }
 
-.logo{
-    font-size: 2em;
-    color: #fff;
-    user-select: none;
+a{
+    text-decoration: none;
+    height: max-content;
 }
 
 
-   
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+
+.main{
+     min-height: 100vh;
     background: url('art.jpg') no-repeat;
     background-size: cover;
     background-position:center ;
     box-shadow: inset;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:991px){
+.main{
+    flex-direction: column;
+}
+.todo{
+    max-width: initial !important;
+}
+.logo{
+    margin-bottom: 2rem;
+    top: 1rem;
+}
+}
+
+.container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    box-shadow: inset;
+    min-height: 100vh;
 }
 
 .logo{
     font-size: 2em;
     color: #fff;
     user-select: none;
-    position: absolute;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    top: 20px;
-    left: 100px;
-
+      position: relative;
+        left: 2rem;
 }
 
 
 .todo{
     width:100%;
-    max-width: 500px;
+    max-width: 650px;
     min-height: 100vh;
-
     background: rgba(30, 22, 11, 0.651);
     padding: 40px 30px 70px;
     border-radius: 10px;
     position: absolute;
-    right: 50px;
 }
 
 .todo h2{

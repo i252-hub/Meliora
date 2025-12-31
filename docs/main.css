@@ -6,6 +6,10 @@
 
 }
 
+a{
+    text-decoration: none !important;
+}
+
 body::-webkit-scrollbar{
     display: none;
 }
@@ -56,6 +60,53 @@ body::-webkit-scrollbar{
     animation: fadeIn;
     animation-duration: 3s;
     animation-delay: 500s;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+}
+
+@media(max-width:1200px){
+
+    
+
+    header > a{
+        width: 100%;
+    }
+
+    #popup{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        width: 25px;
+        fill: white;
+    }
+
+    nav{
+        position: absolute;
+        top: 5rem;
+        max-width: 867px;
+        width: 100%;
+        display: flex;
+        gap:3rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+    .navigation a{
+        margin-left: 0 !important;
+        font-size: 1.5rem;
+    }
+    nav.active{
+        display: flex;
+    }
 }
 
 @keyframes fadeIn {
@@ -148,7 +199,7 @@ header {
 
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;

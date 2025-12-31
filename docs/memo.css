@@ -5,32 +5,53 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 
-body{
+a{
+    text-decoration: none;
+}
+
+.Bg{
+    min-height: 100vh;
     background: url('art.jpg') no-repeat;
     background-size: cover;
+    background-position:center ;
 
 }
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header > h1{
+    width: 50%;
+}
+
 
 .logo{
     font-size: 2em;
     color: #fff;
     user-select: none;
-    position: absolute;
+   width: 50%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     top: 20px;
     left: 100px;
-
+margin-left: 6.5rem;
 }
 
 .wrapper{
-    margin: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 265px);
     gap:15px;
     right: 0;
     position: relative;
+    top: 5rem;
+    margin-left: 7rem;
 }
+
 
 .wrapper li{
     background: white;
@@ -249,10 +270,8 @@ form .row label{
 }
 
 h1{
-    position: absolute;
-    left: 830px;
+   
     font-size: 20px;
     color: white;
-    bottom:600px;
     background: rgb(114, 180, 114);
 }
